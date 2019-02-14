@@ -1,0 +1,22 @@
+{
+  "name": "contribute",
+  "version": "1.0.0",
+  "description": "Tool for seeing/syncing CONTRIBUTING.md guide for Variant repos",
+  "main": "index.js",
+  "bin": "bin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["contribute guide", "variant"],
+  "author": "Mikael Brevik <mikaelbre@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^0.6.0",
+    "marked-terminal": "^3.2.0",
+    "qoa": "^0.2.0",
+    "yargs": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^11.9.4"
+  }
+}
