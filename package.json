@@ -12,7 +12,7 @@
     "contribute guide",
     "variant"
   ],
-  "author": "Mikael Brevik <mikaelbre@gmail.com>",
+  "author": "Mikael Brevik <mb@variant.no>",
   "license": "ISC",
   "dependencies": {
     "@types/prompts": "^2.4.2",
