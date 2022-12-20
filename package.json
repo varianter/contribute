@@ -1,6 +1,6 @@
 {
   "name": "@variant/contribute",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tool for seeing/syncing CONTRIBUTING.md guide for Variant repos",
   "type": "module",
   "main": "index.mjs",
