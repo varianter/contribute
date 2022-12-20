@@ -1,17 +1,18 @@
 #!/usr/bin/env node
 
 import { read, save } from "./index.mjs";
-import marked from "marked";
+import { marked } from "marked";
 import TerminalRenderer from "marked-terminal";
-import yargs from "yargs";
+import yargs from "yargs/yargs";
 
 marked.setOptions({
   renderer: new TerminalRenderer(),
 });
 
-const argv = yargs
+const argv = yargs(process.argv.slice(2))
+  .scriptName("@variant/contribute")
   .usage(
-    `npx @variant/contribute --help
+    `npx $0 --help
   
   Generate CONTRIBUTE.md file either for Norwegian or English.`
   )
