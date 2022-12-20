@@ -40,7 +40,7 @@ async function start() {
       const content = await read(argv.l);
       return console.log(marked(content));
     } catch (e) {
-      console.error("Could not fetch CONTRIBUTE file");
+      console.error("Could not fetch CONTRIBUTE file.");
       console.error(e);
       return;
     }
