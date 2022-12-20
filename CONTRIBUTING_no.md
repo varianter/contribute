@@ -96,3 +96,15 @@ For å godkjenne en Pull Request må følgende være oppfylt og gjøres:
 4. Reviewer godkjenner.
 5. Så kan endringene merges. Foretrekk metode "Squash and merge".
 6. Takk for bidraget og feire med en emoji.
+
+### Code Review practise
+
+[Les full oversikt i bloggform](https://blog.variant.no/7-tips-for-better-code-reviews-ab06b87534bc).
+
+1. Be nice!
+2. Take the time to understand the underlying goal for the pull request.
+3. Provide suggestions for improvement. Show solutions rather than problems.
+4. Avoid stylistic, overly nit-picky comments.
+5. Don't be afraid to check out the changes locally.
+6. Ask (open-ended) questions.
+7. Optimize for throughput, not for gatekeeping.

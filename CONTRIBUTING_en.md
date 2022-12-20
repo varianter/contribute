@@ -1,98 +1,111 @@
-# Contribute Variant
+# Contribution guidelines for Variant systems
 
-I dette dokumentet er det etablert rutiner og hjelp til hvordan man kan bidra
-med innhold, fikser og endringer på systemene til Variant. Dette gjelder
-nettsiden, håndbok, styleguide, og alle andre øvrige systemer som finnes under
-https://github.com/varianter. Selv dette dokumentet tar gjerne i mot forslag til
-endringer.
+In this document, there are established procedures and help on how to contribute
+to the content, fixes, and changes on the systems of Variant. This includes the
+website, handbook, style guide, and all other systems found under
+https://github.com/varianter. Even this document is open to suggestions for
+changes.
 
-## Viktigste retningslinje
+## Main guideline
 
-Vi skal være høfflige og hyggelige mot alle som kommer inn og bidrar. Enten det
-er med kommentarer eller endringer til innhold. Det er viktig å respektere
-andres tid og innsats. Dette gjelder også andre som kommenterer. Dersom noen
-bryter med denne retningslinjen burde nødvendige grep tas (eventuell
-utestengelse fra prosjekt om nødvendig).
+We should be polite and friendly to all those who contribute, whether it be with
+comments or changes to the content. It is important to respect others' time and
+efforts. This also applies to other commenters. If someone breaks this
+guideline, necessary action should be taken (potentially excluding the person
+from the project if necessary).
 
-## Hvordan bidra
+## How to contribute
 
-### Via Githubs grensesnitt
+### Via Github interface
 
-1. Se hvordan man redigerer filer via Githubs grensesnitt:
+1. See how to edit files via the Github interface:
    https://help.github.com/articles/editing-files-in-your-repository/
-2. Velg `Create new branch` alternativet og trykk `Propose file change`
-3. Fyll ut _pull request_ beskrivelse med
-   [informasjon etter formatet spesifisert nedenfor](#pull-request-beskrivelse)
+2. Select the `Create new branch` option and press `Propose file change`
+3. Fill out the _pull request_ description with
+   [information following the format specified below](#pull-request-description)
 
-### Fra lokal (utvikling)
+### From local (development)
 
-Her er det en veldig kortfattet liste over hvordan man kan gå frem. Vi prøver
-ikke være for nøyaktig og detaljert her, for det finnes mange gode ressurser for
-dette allerede. Nedenfor finner du en oppsummering, men om du ønsker en mer
-detaljert fremgangsmåte, anbefaler vi å sjekke ut
-[opensource.guide](https://opensource.guide/how-to-contribute/) fra Github.
+Here is a very brief list of how to proceed. We do not try to be too accurate
+and detailed here, as there are already many good resources for this. Below is a
+summary, but if you want a more detailed procedure, we recommend checking out
+[opensource.guide](https://opensource.guide/how-to-contribute/) from Github.
 
-1. Installer og konfigurer git
+1. Install and configure git
    - Via terminal: https://help.github.com/articles/set-up-git/
-   - Via egen klient: https://desktop.github.com/
-2. Installer node.js:
-   - Nyeste versjon: https://nodejs.org/en/
-   - Avansert: For å velge versjon og holde deg oppdatert:
+   - Via own client: https://desktop.github.com/
+2. Install node.js:
+   - Latest version: https://nodejs.org/en/
+   - Advanced: To select a version and stay updated:
      https://github.com/creationix/nvm
-3. Hent ned aktuelle prosjekt:
-   - E.g håndboken: `git clone https://github.com/varianter/handbook.git`
-   - Naviger til prosjektet `cd handbook`
-4. Utfør steg som står i README.md for oppsett lokalt.
-5. Gjør endringer på filer og sjekk at alt ser bra ut og fungerer.
-6. Om README.md sier at det er tester, kjør `npm run test` eller det README.md
-   spesifiserer
-7. Opprett en egen [branch](https://guides.github.com/introduction/flow/):
-   `git checkout -b uniktNavn`
-8. Lagre endringene til git:
-   1. `git add <fil med endringer>`
-   2. `git commit -m 'Beskrivende endring'`. Meldingen som beskrives her skal
-      holdes konkret og konsis. Det er viktig at de oppsummerer faktiske
-      endringer.
-9. Send endringene til Github: `git push origin uniktNavn`
-10. Naviger til _repoet_: https://github.com/varianter/handbook
-11. Trykk lenken `Create pull request` som er i den gule boksen.
-12. Fyll ut _pull request_ beskrivelse med
-    [informasjon etter formatet spesifisert nedenfor](#pull-request-beskrivelse)
+3. Download relevant project:
+   - E.g handbook: `git clone https://github.com/varianter/handbook.git`
+   - Navigate to the project `cd handbook`
+4. Perform steps in README.md for local setup.
+5. Make changes to files and check that everything looks good and works.
+6. If README.md says there are tests, run `npm run test` or what README.md
+   specifies
+7. Create a new [branch](https://guides.github.com/introduction/flow/):
+   `git checkout -b uniqueName`
+8. Save the changes to git:
+   1. `git add <file with changes>`
+   2. `git commit -m 'Descriptive change'`. The message described here should be
+      kept concrete and concise. It is important that they summarize actual
+      changes.
+9. Push the changes to Github: `git push origin uniqueName`
+10. Navigate to the _repo_: https://github.com/varianter/handbook
+11. Press the `Compare & pull request` button next to the `Branch` dropdown menu
+12. Fill out the _pull request_ description with
+    [information following the format specified below](#pull-request-description)
 
-### Pull Request beskrivelse
+### Pull request description
 
-Når man oppretter en Pull Request (forslag til endring) er det viktig at
-beskrivelsen gir god nok kontekst slik at noen kan forstå resonnementet bak
-endringen. Det betyr at følgende informasjon må som regel med:
+When creating a pull request (suggestion for change), it is important that the
+description provides enough context for someone to understand the reasoning
+behind the change. This means that the following information should usually be
+included:
 
-1. Hva skal denne endringen gjøre
-2. Hvorfor trengs denne endringen
-3. Hvilken info trenger man for å gjøre en vurdering
+1. What this change will do
+2. Why this change is needed
+3. What information is needed to make an assessment
 
-Med å gi denne informasjonen vil det være mye enklere å vurdere endringene, både
-tekniske og innholdsmessige, som igjen gjør at endringene kan raskere komme "ut
-i produksjon".
+By providing this information, it will be much easier to assess the changes,
+both technical and content-related, which in turn will allow the changes to be
+implemented more quickly.
 
-## Hvordan håndtere innkommende Pull Requests og Issues
+## Handling incoming pull requests and issues
 
-Denne delen gjelder for alle som har rettigheter til å godkjenne og dra inn
-endringer. Her dekkes det hvordan vi opererer med å få inn endringer og rutiner
-vi burde ha for å kvalitetssikre innhold. Fokuset her er ikke å hindre endringer
-ut på systemer, men å unngå at vi gjør en feil. Det kan særlig være skummelt for
-nye ansatte, og vi ønsker å senke terskel for å gjøre endringer.
+This section applies to anyone with the rights to approve and incorporate
+changes. It covers how we operate in bringing in changes and the procedures we
+should have in place to quality-assure content. The focus here is not to prevent
+changes to the systems, but to avoid mistakes. This can be particularly
+intimidating for new employees, and we want to lower the threshold for making
+changes.
 
-Det er viktig i kommunikasjon og diskusjoner på Pull Requests og Issues. Vi skal
-være imøtekommende og høffelig. Uansett hvem det er som kommer med bidrag. Om
-det er kolleger eller eksterne. Dette er selsagt, men det må sies. **Respekter
-andres tid som har gått inn i å bidra**.
+It is important to be accommodating and polite in communication and discussions
+on pull requests and issues. This applies to everyone who contributes, whether
+they are colleagues or external. This is obvious, but it must be said. **Respect
+the time that has gone into contributing**.
 
-### Godkjenning
+### Approval
 
-For å godkjenne en Pull Request må følgende være oppfylt og gjøres:
+For a pull request to be approved, the following must be fulfilled and done:
 
-1. Minst en reviewer må være lag til.
-2. Om ekstra innspill trengs, tag teams med f.eks @variant/styre og lignende.
-3. Reviewers ser over og kommer med innspill til eventuelle endringer.
-4. Reviewer godkjenner.
-5. Så kan endringene merges. Foretrekk metode "Squash and merge".
-6. Takk for bidraget og feire med en emoji.
+1. At least one reviewer must be assigned.
+2. If additional input is needed, tag teams such as @variant/styre and the like.
+3. Reviewers review and provide input on any necessary changes.
+4. Reviewer approves.
+5. Then the changes can be merged. Prefer the "Squash and merge"
+6. Thank for contribution and high fives all around.
+
+### Code Review practise
+
+[Read full guide in blogpost](https://blog.variant.no/7-tips-for-better-code-reviews-ab06b87534bc).
+
+1. Be nice!
+2. Take the time to understand the underlying goal for the pull request.
+3. Provide suggestions for improvement. Show solutions rather than problems.
+4. Avoid stylistic, overly nit-picky comments.
+5. Don't be afraid to check out the changes locally.
+6. Ask (open-ended) questions.
+7. Optimize for throughput, not for gatekeeping.
