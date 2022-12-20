@@ -52,7 +52,7 @@ async function start() {
     if (success) {
       console.log(`Saved CONTRIBUTING.md in ${process.cwd()}!`);
     } else {
-      console.log(`Couldn't save file`);
+      console.log(`Couldn't save file.`);
     }
   } catch (e) {
     console.error("Couldn't save CONTRIBUTE file in project.");
