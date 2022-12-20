@@ -50,7 +50,7 @@ async function start() {
     const success = await save(argv.l, argv.o);
 
     if (success) {
-      console.log(`Saved CONTRIBUTING.md in ${process.cwd()}`);
+      console.log(`Saved CONTRIBUTING.md in ${process.cwd()}!`);
     } else {
       console.log(`Couldn't save file`);
     }
