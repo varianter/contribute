@@ -10,6 +10,11 @@ marked.setOptions({
 });
 
 const argv = yargs
+  .usage(
+    `npx @variant/contribute --help
+  
+  Generate CONTRIBUTE.md file either for Norwegian or English.`
+  )
   .options({
     save: {
       alias: "s",
@@ -32,7 +37,7 @@ const argv = yargs
 async function start() {
   if (!argv.s) {
     try {
-      const content = await read();
+      const content = await read(argv.l);
       return console.log(marked(content));
     } catch (e) {
       console.error("Could not fetch CONTRIBUTE file");
