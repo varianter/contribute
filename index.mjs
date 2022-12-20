@@ -35,7 +35,10 @@ async function read(lang) {
   return content;
 }
 
-async function save(override = false) {
+/**
+ * @param {'no' | 'en' | undefined} [lang]
+ */
+async function save(lang, override = false) {
   const doesExist = await exists(destination);
 
   if (doesExist && !override) {
@@ -51,7 +54,7 @@ async function save(override = false) {
     }
   }
 
-  const content = await read();
+  const content = await read(lang);
 
   await writeFile(destination, content);
   return true;

@@ -47,7 +47,7 @@ async function start() {
   }
 
   try {
-    const success = await save(argv.o);
+    const success = await save(argv.l, argv.o);
 
     if (success) {
       console.log(`Saved CONTRIBUTING.md in ${process.cwd()}`);
